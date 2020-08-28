@@ -1,0 +1,18 @@
+<h1>ScrapBox</h1>
+<table>
+  <thead>
+    <tr>
+      <th>タスク名</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @scraps.each do |scrap| %>
+      <tr>
+        <td><%= scrap.title %></td>
+        <td><%= link_to '編集', edit_scrap_path(scrap) %></td>
+        <td><%= link_to '削除', scrap_path(scrap), method: :delete %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<%= link_to '追加', new_scrap_path %>
