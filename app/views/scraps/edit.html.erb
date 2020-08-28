@@ -3,6 +3,8 @@
 <%= form_for(@scrap) do |f| %>
   <div><%= f.label :title %></div>
   <div><%= f.text_field :title %></div>
+  <div><%= f.text_area :content %></div>
   <div><%= f.submit %></div>
 <% end %>
+<%= link_to '削除', scrap_path(@scrap), method: :delete %>
 <%= link_to '戻る',scraps_path %>

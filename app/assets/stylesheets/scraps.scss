@@ -1,3 +1,36 @@
 // Place all the styles related to the Scraps controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+table {
+    width: auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+th,td {
+        display: block;
+        width: auto;
+        padding: 1em;
+        text-align: center;
+}
+thead {
+    display: flex;
+    float: left;
+}
+thead th:first-child:before {
+   padding: 1em;
+}
+tbody {
+    display: flex;
+    width: auto;
+}
+tbody tr {
+    display: flex;
+    width: 250px;
+    height: 250px;
+    flex-direction: column;
+    border-top: 10px solid gray;
+    border-left: 10px solid gray;
+    border-bottom: 10px solid gray;
+    border-right: 10px solid gray;
+}
