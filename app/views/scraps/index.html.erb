@@ -5,6 +5,7 @@
       <tr>
         <td><%= link_to scrap.title, edit_scrap_path(scrap) %></td>
         <td><%= scrap.content %></td>
+        <td><%= button_to (scrap.title and scrap.content), edit_scrap_path(scrap) ,{method: :get, class: "btn-square"}%></td>
       </tr>
     <% end %>
   </tbody>
