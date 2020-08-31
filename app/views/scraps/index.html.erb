@@ -3,11 +3,24 @@
   <tbody>
     <% @scraps.each do |scrap| %>
       <tr>
-        <td><%= link_to scrap.title, edit_scrap_path(scrap) %></td>
-        <td><%= scrap.content %></td>
-        <td><%= button_to (scrap.title and scrap.content), edit_scrap_path(scrap) ,{method: :get, class: "btn-square"}%></td>
+      <td><%=link_to(edit_scrap_path(scrap)) do %>
+
+<%= button_to edit_scrap_path(scrap), {method: :get, class: 'btn-square'} do %>
+<div class="box-wrapper">
+<div class="box">
+              <h1><%= scrap.title%></h1>
+<br><br>
+            <%= scrap.content %>
+</div></div>
+
+
+<% end %>
+<%end%>
+</td>
       </tr>
     <% end %>
   </tbody>
 </table>
+<br>
 <%= link_to '追加', new_scrap_path %>
+<!-- <div class="my-parts"><span></span></div> -->
