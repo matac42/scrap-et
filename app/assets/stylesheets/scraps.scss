@@ -76,3 +76,7 @@ border-bottom: none;/*線を消す*/
  // text-align:center;
  // margin:0 auto;
 }
+.itemlist{
+    display: flex;
+    flex-wrap: wrap;
+}
