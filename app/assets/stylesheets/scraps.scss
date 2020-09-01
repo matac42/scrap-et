@@ -36,6 +36,7 @@ tbody tr {
 }
 
 .btn-square {
+
     display: inline-block;
     margin: 0 auto;
     padding: 0px;
@@ -44,11 +45,12 @@ tbody tr {
     color: #FFF;
     // border-bottom: solid 4px #627295;
     // border-radius: 2px;
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     // position: absolute;
     top: 11% ;
     transform : translateX(0%);
+
     // -webkit-transform : translateY(-50%);
     // transform : translateY(-50%);
 }
@@ -63,13 +65,14 @@ border-bottom: none;/*線を消す*/
 .box-wrapper{
   // border: 10px white;
   display: table;
-  height: 250px;
-  width: 250px;
-  background-color: red;
+  height: 200px;
+  width: 200px;
+  background-color: gray;
+
 }
 .box{
   display:inline-block;
-  width:18em;
+  width:15em;
  // text-align:center;
  // margin:0 auto;
 }
