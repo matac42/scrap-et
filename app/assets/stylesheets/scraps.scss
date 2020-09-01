@@ -24,6 +24,9 @@ tbody {
     display: flex;
     width: auto;
 }
+body{
+  background-color:  #dcdde0;
+}
 tbody tr {
     display: flex;
     width: 250px;
@@ -36,12 +39,11 @@ tbody tr {
 }
 
 .btn-square {
-
     display: inline-block;
-    margin: 0 auto;
-    padding: 0px;
+    margin: 10px;
+    padding: 10px;
     text-decoration: none;
-    background: #668ad8;/*ボタン色*/
+    background: #AAAAAA;/*ボタン色*/
     color: #FFF;
     // border-bottom: solid 4px #627295;
     // border-radius: 2px;
@@ -50,6 +52,8 @@ tbody tr {
     // position: absolute;
     top: 11% ;
     transform : translateX(0%);
+
+
 
     // -webkit-transform : translateY(-50%);
     // transform : translateY(-50%);
@@ -69,6 +73,7 @@ border-bottom: none;/*線を消す*/
   width: 200px;
   background-color: gray;
 
+
 }
 .box{
   display:inline-block;
@@ -79,4 +84,5 @@ border-bottom: none;/*線を消す*/
 .itemlist{
     display: flex;
     flex-wrap: wrap;
+
 }
