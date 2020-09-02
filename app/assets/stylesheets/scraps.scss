@@ -33,7 +33,13 @@ tbody tr {
     height: 250px;
     flex-direction: column;
 }
+input[type="text"]{
+  font-size: 6em;
+}
 
+textarea{
+  font-size: 2em;
+}
 .btn-square {
     display: inline-block;
     margin: 10px;
@@ -105,7 +111,8 @@ header span { margin-left: 100px; }
     top: 40%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%) 
+    transform: translate(-50%, -50%)
+
 }
 
 /*テキスト要素を中央寄せする*/

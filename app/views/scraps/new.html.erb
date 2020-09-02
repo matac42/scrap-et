@@ -1,9 +1,13 @@
 
 <div class="blocktext">
+
+
 <%= form_for(@scrap) do |f| %>
-  <div><%= f.text_area :title ,:size=>"60x10"%></div>
-  <div><%= f.text_area :content,:size=>"60x10" %></div>
+  <div><%= f.text_field :title %></div>
+  <br><br>
+  <div><%= f.text_area :content,:size=>"60x20" %></div>
   <div><%= f.submit %></div>
 <% end %>
+
 <%= link_to '戻る', scraps_path %>
 </div>
