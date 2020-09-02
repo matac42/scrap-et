@@ -35,10 +35,16 @@ tbody tr {
 }
 input[type="text"]{
   font-size: 6em;
+  width: 80vw;
+  height: 10vw;
+  margin-top: 10vw;
 }
 
 textarea{
   font-size: 2em;
+  resize: none;
+  width: 80vw;
+  height: 30vw;
 }
 .btn-square {
     display: inline-block;
