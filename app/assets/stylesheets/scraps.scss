@@ -98,3 +98,17 @@ header span { margin-left: 100px; }
     content: "";
     background-color: #41b059;
 }
+
+/*ブロック要素を中央寄せする*/
+.blocktext {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}
+
+/*テキスト要素を中央寄せする*/
+.textcenter {
+    text-align: center;
+}
