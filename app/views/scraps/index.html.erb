@@ -1,22 +1,24 @@
-<<body>
-
-
+<body>
+  <header>
 <h1>ScrapBox</h1>
+<span><%= link_to "", new_scrap_path, class: 'plus2' %></span>
+
+</header>
+
+
 <ul class="itemlist">
     <% @scraps.each do |scrap| %>
       <%= button_to edit_scrap_path(scrap), {method: :get, class: 'btn-square'} do %>
-      <!-- <div class="box-wrapper"> -->
-      <!-- <div class="box"> -->
+
       <h1><%= scrap.title%></h1>
       <br>
       <br>
       <%= scrap.content %>
-      <!-- </div> -->
-      <!-- </div> -->
+
       <% end %>
     <% end %>
 </ul>
 <br>
-<%= link_to '追加', new_scrap_path %>
-</body>>
+
+</body>
 <!-- <div class="my-parts"><span></span></div> -->
