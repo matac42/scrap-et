@@ -46,6 +46,9 @@ textarea{
   width: 80vw;
   height: 30vw;
 }
+
+
+
 .btn-square {
     display: inline-block;
     margin: 10px;
@@ -77,6 +80,8 @@ border-bottom: none;/*線を消す*/
 }
 
 header { border-bottom: 1px solid #000; }
+header{width: 100%;}
+header{height: 100%;}
 header > h1 { display: inline-block; }
 header span { margin-left: 100px; }
 
@@ -124,4 +129,52 @@ header span { margin-left: 100px; }
 /*テキスト要素を中央寄せする*/
 .textcenter {
     text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+/*フォーム全体*/
+#form1{
+display: flex;
+position:relative;/*フォームの相対位置*/
+max-width:12px;/*フォームのサイズ*/
+margin-bottom:0px;/*フォームの下に余白*/
+}
+/*検索ボックス*/
+#sbox{
+position:absolute;/*フォームの絶対位置*/
+left:330px;/*検索ボタンの位置調整*/
+top:-70px;
+outline:0;/*クリック時の青い枠線消す*/
+height:20px;/*検索ボックスの高さ*/
+width:400px;
+padding:10px;/*テキスト位置調整*/
+border-radius:2px 0 0 2px;/*検索ボックスの角を丸める*/
+background:#eee;/*検索ボックスの背景カラー*/
+font-size: 16px;
+}
+/*検索ボタン*/
+#sbtn{
+position:absolute;/*検索ボタンの絶対位置*/
+width:70px;/*検索ボタンの横幅*/
+height:45px;/*検索ボタンの縦幅*/
+left:755px;/*検索ボタンの位置調整*/
+top:-70px;
+border-radius:0 2px 2px 0;/*検索ボタンの角を丸める*/
+background:#7fbfff;/*検索ボタンの背景カラー*/
+border:none;/*検索ボタンの枠線を消す*/
+color:#fff;/*検索ボタンのテキストカラー*/
+font-weight:bold;/*検索ボタンのテキスト太字*/
+font-size: 16px;/*検索ボタンのフォントサイズ*/
+}
+/*検索ボタンマウスオーバー時*/
+#sbtn:hover{
+color:#666;/*検索ボタンマウスオーバー時のフォントカラー*/
 }
