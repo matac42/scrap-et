@@ -1,7 +1,10 @@
+<%= link_to scraps_path, class: "Edit-btn" do %>
+  <h1>ScrapBox</h1>
+<% end %>
 
 <div class="blocktext">
 
-
+<body>
 <%= form_for(@scrap) do |f| %>
   <div><%= f.text_field :title %></div>
   <br>
@@ -9,5 +12,6 @@
   <div><%= f.submit %></div>
 <% end %>
 
-<%= link_to '戻る', scraps_path %>
+
 </div>
+</body>
