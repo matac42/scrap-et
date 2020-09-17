@@ -204,3 +204,11 @@ color:#666;/*検索ボタンマウスオーバー時のフォントカラー*/
       color: black;
     }
   }
+
+.check_box {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}

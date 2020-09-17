@@ -15,8 +15,8 @@
 <ul class="itemlist">
     <% @scraps.each do |scrap| %>
       <%= button_to edit_scrap_path(scrap), {method: :get, class: 'btn-square'} do %>
-
-      <h1><%= scrap.title%></h1>
+      <div class="check_box"><%= check_box "@checked_list", scrap.id%></div>
+      <h1><%=scrap.title%></h1>
       <br>
       <br>
       <%= scrap.content %>
@@ -25,6 +25,8 @@
     <% end %>
 </ul>
 <br>
+
+<%= @checked_list %>
 
 </body>
 <!-- <div class="my-parts"><span></span></div> -->
