@@ -29,15 +29,15 @@ def destroy
     redirect_to scraps_path
 end
 
-# def destroy_all
-#   @check = 
-#   @deletes = []
-#   @deletes.push()
-
-# def delete_tasks
-#   params[:check].each do | di1, di2 |
-#     if di2 == "1"
-
+def destroy_all
+  checked_data = params[:deletes].keys
+  puts checked_data
+  Scrap.destroy(checked_data)
+  respond_to do |format|
+    format.html { redirect_to scraps_path, notice: 'Scraps were successfully destroyed.' }
+    format.json { head :no_content }
+  end
+end
 
   private
     def scrap_params

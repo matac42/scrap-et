@@ -11,11 +11,11 @@
 </form>
 </header>
 
-
+<%= form_with url: destroy_all_scraps_path, method: :delete do |f| %>
 <ul class="itemlist">
     <% @scraps.each do |scrap| %>
       <%= button_to edit_scrap_path(scrap), {method: :get, class: 'btn-square'} do %>
-      <div class="check_box"><%= check_box "@checked_list", scrap.id%></div>
+      <div class="check_box"><%= check_box_tag "deletes[#{ scrap.id }]", scrap.id%></div>
       <h1><%=scrap.title%></h1>
       <br>
       <br>
@@ -25,8 +25,9 @@
     <% end %>
 </ul>
 <br>
+<%= f.submit "選択削除", data: { confirm: 'Are you sure?' } %>
+<% end %>
 
-<%= @checked_list %>
 
 </body>
 <!-- <div class="my-parts"><span></span></div> -->
